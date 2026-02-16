@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Programmes de formation, ateliers et événements IA - MIA-Cameroun Version Bootstrap.">
+    <title>Programmes | MIA-Cameroun</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-bs.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background: rgba(10,31,63,0.95); backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index-bs.html">
+                <img src="../logo.jpeg" alt="Logo MIA" height="45" class="rounded p-1" style="background:white;">
+                <div>
+                    <div class="fw-bold" style="font-family:'Outfit',sans-serif; letter-spacing:1px;">MIA-Cameroun</div>
+                    <small class="d-block"
+                        style="color:#d4a017; font-size:0.65rem; letter-spacing:2px; text-transform:uppercase;">Maison
+                        de l'IA</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index-bs.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a-propos-bs.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="programmes-bs.html">Programmes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-bs.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tricolore -->
+    <div class="d-flex" style="position:fixed;top:76px;left:0;right:0;z-index:1030;height:4px;">
+        <div style="flex:1;background:#007a33;"></div>
+        <div style="flex:1;background:#ce1126;"></div>
+        <div style="flex:1;background:#fcd116;"></div>
+    </div>
+
+    <!-- Banner -->
+    <section class="page-banner-bs text-center text-white">
+        <div class="container position-relative" style="z-index:2;">
+            <h1 class="display-5 fw-bold" style="font-family:'Outfit',sans-serif;">Nos Programmes</h1>
+            <p class="lead" style="color:rgba(255,255,255,0.7);">Formations, ateliers et événements pour maîtriser
+                l'Intelligence Artificielle</p>
+        </div>
+    </section>
+
+    <div class="d-flex" style="height:5px;">
+        <div style="flex:1;background:#007a33;"></div>
+        <div style="flex:1;background:#ce1126;"></div>
+        <div style="flex:1;background:#fcd116;"></div>
+    </div>
+
+    <!-- Formations IA -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="font-family:'Outfit',sans-serif; color:#0a1f3f;">Formations en IA</h2>
+                <div class="mx-auto mt-2 mb-3 rounded"
+                    style="width:60px;height:4px;background:linear-gradient(to right,#d4a017,#00b4d8);"></div>
+                <p class="text-muted mx-auto" style="max-width:600px;">Des parcours structurés pour tous les niveaux</p>
+            </div>
+            <div class="row g-4">
+                <!-- Débutant -->
+                <div class="col-lg-4">
+                    <div class="card shadow-sm programme-card-bs h-100">
+                        <div class="programme-header text-white p-4">
+                            <span class="badge rounded-pill mb-2"
+                                style="background:rgba(212,160,23,0.3);color:#e8b832;">Débutant</span>
+                            <h5 class="fw-bold mb-0">Introduction à l'IA</h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-muted">Découvrez les fondamentaux de l'Intelligence Artificielle et du
+                                Machine Learning.</p>
+                            <ul class="list-unstyled check-list">
+                                <li>Concepts de base de l'IA</li>
+                                <li>Introduction au Machine Learning</li>
+                                <li>Python pour la Data Science</li>
+                                <li>Projets pratiques guidés</li>
+                            </ul>
+                            <p class="small text-muted mt-3 mb-0"><strong>Durée :</strong> 8 semaines | <strong>Format
+                                    :</strong> Hybride</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Intermédiaire -->
+                <div class="col-lg-4">
+                    <div class="card shadow-sm programme-card-bs h-100">
+                        <div class="programme-header text-white p-4">
+                            <span class="badge rounded-pill mb-2"
+                                style="background:rgba(212,160,23,0.3);color:#e8b832;">Intermédiaire</span>
+                            <h5 class="fw-bold mb-0">Deep Learning & Réseaux de Neurones</h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-muted">Maîtrisez les architectures de Deep Learning et leurs applications
+                                concrètes.</p>
+                            <ul class="list-unstyled check-list">
+                                <li>Réseaux de neurones (CNN, RNN)</li>
+                                <li>TensorFlow & PyTorch</li>
+                                <li>Vision par ordinateur</li>
+                                <li>Traitement du langage naturel</li>
+                            </ul>
+                            <p class="small text-muted mt-3 mb-0"><strong>Durée :</strong> 12 semaines | <strong>Format
+                                    :</strong> Présentiel</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Avancé -->
+                <div class="col-lg-4">
+                    <div class="card shadow-sm programme-card-bs h-100">
+                        <div class="programme-header text-white p-4">
+                            <span class="badge rounded-pill mb-2"
+                                style="background:rgba(212,160,23,0.3);color:#e8b832;">Avancé</span>
+                            <h5 class="fw-bold mb-0">IA Appliquée & Déploiement</h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-muted">Apprenez à déployer des modèles IA en production.</p>
+                            <ul class="list-unstyled check-list">
+                                <li>MLOps et pipelines de données</li>
+                                <li>Déploiement cloud (AWS, GCP)</li>
+                                <li>IA générative & LLM</li>
+                                <li>Projet capstone réel</li>
+                            </ul>
+                            <p class="small text-muted mt-3 mb-0"><strong>Durée :</strong> 16 semaines | <strong>Format
+                                    :</strong> Hybride</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ateliers -->
+    <section class="py-5" style="background:#f4f6f9;">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="font-family:'Outfit',sans-serif; color:#0a1f3f;">Ateliers Pratiques</h2>
+                <div class="mx-auto mt-2 mb-3 rounded"
+                    style="width:60px;height:4px;background:linear-gradient(to right,#d4a017,#00b4d8);"></div>
+                <p class="text-muted">Sessions intensives pour approfondir des compétences spécifiques</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm card-hover p-4">
+                        <i class="bi bi-bar-chart-fill fs-1 mb-3" style="color:#00b4d8;"></i>
+                        <h5 class="fw-bold" style="color:#0a1f3f;">Atelier Data Science</h5>
+                        <p class="text-muted mb-0">Apprenez à collecter, nettoyer et analyser des données avec Python,
+                            Pandas et les outils modernes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm card-hover p-4">
+                        <i class="bi bi-robot fs-1 mb-3" style="color:#d4a017;"></i>
+                        <h5 class="fw-bold" style="color:#0a1f3f;">Atelier Chatbots IA</h5>
+                        <p class="text-muted mb-0">Créez votre propre chatbot intelligent en utilisant des modèles de
+                            langage et des APIs modernes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm card-hover p-4">
+                        <i class="bi bi-eye-fill fs-1 mb-3" style="color:#007a33;"></i>
+                        <h5 class="fw-bold" style="color:#0a1f3f;">Atelier Computer Vision</h5>
+                        <p class="text-muted mb-0">Détection d'objets, reconnaissance faciale et analyse d'images avec
+                            OpenCV et YOLO.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Événements -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="font-family:'Outfit',sans-serif; color:#0a1f3f;">Événements</h2>
+                <div class="mx-auto mt-2 mb-3 rounded"
+                    style="width:60px;height:4px;background:linear-gradient(to right,#d4a017,#00b4d8);"></div>
+                <p class="text-muted">Conférences, hackathons et meetups pour la communauté IA camerounaise</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm card-hover event-card p-4"
+                        style="border-color:#d4a017 !important;">
+                        <i class="bi bi-trophy-fill fs-1 mb-3" style="color:#d4a017;"></i>
+                        <h5 class="fw-bold" style="color:#0a1f3f;">Hackathon IA Cameroun 2026</h5>
+                        <p class="text-muted">48 heures pour développer des solutions IA innovantes répondant aux défis
+                            du Cameroun.</p>
+                        <p class="fw-semibold mb-0" style="color:#d4a017;"><i class="bi bi-calendar3"></i> Mars 2026 —
+                            Yaoundé</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm card-hover event-card p-4"
+                        style="border-color:#00b4d8 !important;">
+                        <i class="bi bi-mic-fill fs-1 mb-3" style="color:#00b4d8;"></i>
+                        <h5 class="fw-bold" style="color:#0a1f3f;">Conférence Africa AI Summit</h5>
+                        <p class="text-muted">Experts internationaux partagent leur vision de l'IA en Afrique.
+                            Networking et opportunités.</p>
+                        <p class="fw-semibold mb-0" style="color:#00b4d8;"><i class="bi bi-calendar3"></i> Juin 2026 —
+                            Douala</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm card-hover event-card p-4"
+                        style="border-color:#007a33 !important;">
+                        <i class="bi bi-laptop fs-1 mb-3" style="color:#007a33;"></i>
+                        <h5 class="fw-bold" style="color:#0a1f3f;">Meetups Mensuels</h5>
+                        <p class="text-muted">Chaque mois, retrouvez la communauté MIA pour des présentations et
+                            échanges autour de l'IA.</p>
+                        <p class="fw-semibold mb-0" style="color:#007a33;"><i class="bi bi-calendar3"></i> Chaque 1er
+                            samedi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 text-white text-center" style="background: linear-gradient(135deg,#0a1f3f,#14325e);">
+        <div class="container py-3">
+            <h2 class="fw-bold mb-3" style="font-family:'Outfit',sans-serif;">Prêt à commencer votre parcours en IA ?
+            </h2>
+            <p class="mx-auto mb-4" style="max-width:550px;color:rgba(255,255,255,0.7);">Inscrivez-vous à l'un de nos
+                programmes ou contactez-nous pour plus d'informations.</p>
+            <a href="contact-bs.html" class="btn btn-warning btn-lg fw-semibold px-5 shadow">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3" style="background:#1a1a2e; color:rgba(255,255,255,0.7);">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <img src="../logo.jpeg" alt="MIA" height="50" class="rounded p-1 mb-3" style="background:white;">
+                    <p class="small">La Maison de l'Intelligence Artificielle du Cameroun — promouvoir l'innovation et
+                        former les talents de demain.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white mb-3 fw-bold">Navigation</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,0.6);">Accueil</a></li>
+                        <li class="mb-2"><a href="a-propos-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,0.6);">À propos</a></li>
+                        <li class="mb-2"><a href="programmes-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,0.6);">Programmes</a></li>
+                        <li class="mb-2"><a href="contact-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,0.6);">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white mb-3 fw-bold">Programmes</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="programmes-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,0.6);">Formation IA</a></li>
+                        <li class="mb-2"><a href="programmes-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,0.6);">Ateliers</a></li>
+                        <li class="mb-2"><a href="programmes-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,0.6);">Événements</a></li>
+                        <li class="mb-2"><a href="programmes-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,0.6);">Hackathons</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-white mb-3 fw-bold">Newsletter</h6>
+                    <p class="small">Recevez nos dernières actualités</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Votre email"
+                            style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);color:white;">
+                        <button class="btn btn-warning fw-semibold">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color:rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <div class="d-flex mx-auto mb-2 rounded overflow-hidden" style="width:60px;height:3px;">
+                    <div style="flex:1;background:#007a33;"></div>
+                    <div style="flex:1;background:#ce1126;"></div>
+                    <div style="flex:1;background:#fcd116;"></div>
+                </div>
+                <p class="small mb-0">&copy; 2026 MIA-Cameroun — Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MIA-Cameroun — Maison de l'Intelligence Artificielle du Cameroun. Version Bootstrap.">
+    <title>MIA-Cameroun | Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-bs.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background:rgba(11,29,53,.92);backdrop-filter:blur(16px) saturate(1.8);border-bottom:1px solid rgba(255,255,255,.06);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index-bs.html">
+                <img src="../logo.jpeg" alt="Logo MIA" height="42" class="rounded p-1" style="background:#fff;">
+                <div>
+                    <div class="fw-bold" style="font-family:'Outfit',sans-serif;font-size:1.1rem;letter-spacing:.5px;">
+                        MIA-Cameroun</div>
+                    <small class="d-block"
+                        style="color:#d4a017;font-size:.6rem;letter-spacing:2.5px;text-transform:uppercase;">Maison de
+                        l'IA</small>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link active px-3 rounded-pill" href="index-bs.html">Accueil</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="a-propos-bs.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="programmes-bs.html">Programmes</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-3 rounded-pill" href="contact-bs.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tricolore fixe -->
+    <div class="d-flex" style="position:fixed;top:72px;left:0;right:0;z-index:1030;height:3px;">
+        <div style="flex:1;background:#007a33;"></div>
+        <div style="flex:1;background:#ce1126;"></div>
+        <div style="flex:1;background:#fcd116;"></div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero-section d-flex align-items-center justify-content-center text-center text-white"
+        style="min-height:100vh;padding-top:90px;">
+        <div class="particles"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="container position-relative" style="z-index:2;">
+            <img src="../logo.jpeg" alt="Logo MIA" class="hero-logo mx-auto mb-4 rounded-4 p-3 shadow-lg"
+                style="width:130px;height:130px;object-fit:contain;background:#fff;">
+            <h1 class="display-4 fw-bold mb-2" style="font-family:'Outfit',sans-serif;">
+                Maison de l'<span style="color:#d4a017;">Intelligence Artificielle</span> du Cameroun
+            </h1>
+            <p class="lead fst-italic mb-3" style="color:#48cae4;">« Innover aujourd'hui pour transformer le Cameroun de
+                demain »</p>
+            <p class="mx-auto mb-4" style="max-width:600px;color:rgba(255,255,255,.75);font-size:1.05rem;">
+                La MIA-Cameroun est une institution dédiée à la promotion, la recherche et la vulgarisation de
+                l'Intelligence Artificielle au Cameroun.
+            </p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="programmes-bs.html"
+                    class="btn btn-warning btn-lg fw-semibold px-4 shadow rounded-pill btn-shine">Nos Programmes</a>
+                <a href="a-propos-bs.html" class="btn btn-outline-light btn-lg fw-semibold px-4 rounded-pill">En savoir
+                    plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tricolore -->
+    <div class="d-flex" style="height:3px;">
+        <div style="flex:1;background:#007a33;"></div>
+        <div style="flex:1;background:#ce1126;"></div>
+        <div style="flex:1;background:#fcd116;"></div>
+    </div>
+
+    <!-- Mission -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="font-family:'Outfit',sans-serif;color:#0b1d35;">Notre Mission</h2>
+                <div class="mx-auto mt-2 mb-3 rounded"
+                    style="width:50px;height:3px;background:linear-gradient(90deg,#d4a017,#00b4d8);"></div>
+                <p class="text-muted mx-auto" style="max-width:560px;">Faire du Cameroun un pôle d'excellence en
+                    Intelligence Artificielle en Afrique Centrale</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm card-hover p-4">
+                        <i class="bi bi-mortarboard-fill fs-1 mb-3" style="color:#00b4d8;"></i>
+                        <h5 class="fw-bold" style="color:#0b1d35;">Formation</h5>
+                        <p class="text-muted mb-0">Des programmes adaptés à tous les niveaux pour maîtriser les
+                            technologies de l'IA et du Machine Learning.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm card-hover p-4">
+                        <i class="bi bi-search fs-1 mb-3" style="color:#d4a017;"></i>
+                        <h5 class="fw-bold" style="color:#0b1d35;">Recherche</h5>
+                        <p class="text-muted mb-0">Accompagner les projets de recherche en intelligence artificielle
+                            adaptés aux réalités locales camerounaises.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm card-hover p-4">
+                        <i class="bi bi-people-fill fs-1 mb-3" style="color:#007a33;"></i>
+                        <h5 class="fw-bold" style="color:#0b1d35;">Communauté</h5>
+                        <p class="text-muted mb-0">Créer un réseau vibrant de passionnés, chercheurs, entrepreneurs et
+                            institutionnels autour de l'IA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-5 text-white" style="background:linear-gradient(160deg,#0b1d35,#132d52);">
+        <div class="container py-3">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <h2 class="display-5 fw-bold" style="color:#d4a017;">500+</h2>
+                    <p class="mb-0" style="color:rgba(255,255,255,.65);">Étudiants formés</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="display-5 fw-bold" style="color:#d4a017;">20+</h2>
+                    <p class="mb-0" style="color:rgba(255,255,255,.65);">Formations</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="display-5 fw-bold" style="color:#d4a017;">15+</h2>
+                    <p class="mb-0" style="color:rgba(255,255,255,.65);">Partenaires</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="display-5 fw-bold" style="color:#d4a017;">10</h2>
+                    <p class="mb-0" style="color:rgba(255,255,255,.65);">Régions couvertes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5" style="background:#f7f8fc;">
+        <div class="container text-center py-4">
+            <h2 class="fw-bold mb-3" style="font-family:'Outfit',sans-serif;color:#0b1d35;">Rejoignez le mouvement IA
+            </h2>
+            <p class="text-muted mx-auto mb-4" style="max-width:520px;">Que vous soyez étudiant, professionnel ou
+                entrepreneur, la MIA-Cameroun a un programme pour vous.</p>
+            <a href="contact-bs.html" class="btn btn-lg fw-semibold px-5 text-white rounded-pill shadow btn-shine"
+                style="background:linear-gradient(135deg,#00b4d8,#48cae4);">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3" style="background:#0d0d1a;color:rgba(255,255,255,.6);">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <img src="../logo.jpeg" alt="MIA" height="44" class="rounded p-1 mb-3" style="background:#fff;">
+                    <p class="small">Maison de l'Intelligence Artificielle du Cameroun — promouvoir l'innovation et
+                        former les talents de demain.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white mb-3 fw-bold"
+                        style="border-bottom:2px solid #d4a017;display:inline-block;padding-bottom:6px;">Navigation</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,.5);">Accueil</a></li>
+                        <li class="mb-2"><a href="a-propos-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,.5);">À propos</a></li>
+                        <li class="mb-2"><a href="programmes-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,.5);">Programmes</a></li>
+                        <li class="mb-2"><a href="contact-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,.5);">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white mb-3 fw-bold"
+                        style="border-bottom:2px solid #d4a017;display:inline-block;padding-bottom:6px;">Programmes</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="programmes-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,.5);">Formation IA</a></li>
+                        <li class="mb-2"><a href="programmes-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,.5);">Ateliers</a></li>
+                        <li class="mb-2"><a href="programmes-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,.5);">Événements</a></li>
+                        <li class="mb-2"><a href="programmes-bs.html" class="text-decoration-none"
+                                style="color:rgba(255,255,255,.5);">Hackathons</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-white mb-3 fw-bold"
+                        style="border-bottom:2px solid #d4a017;display:inline-block;padding-bottom:6px;">Newsletter</h6>
+                    <p class="small">Recevez nos dernières actualités</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control rounded-start-pill" placeholder="Votre email"
+                            style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1);color:#fff;">
+                        <button class="btn btn-warning fw-semibold rounded-end-pill btn-shine">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color:rgba(255,255,255,.08);">
+            <div class="text-center">
+                <div class="d-flex mx-auto mb-2 rounded overflow-hidden" style="width:50px;height:2px;">
+                    <div style="flex:1;background:#007a33;"></div>
+                    <div style="flex:1;background:#ce1126;"></div>
+                    <div style="flex:1;background:#fcd116;"></div>
+                </div>
+                <p class="small mb-0">&copy; 2026 MIA-Cameroun — Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

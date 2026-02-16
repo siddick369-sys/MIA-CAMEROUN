@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programmes de formation IA, ateliers pratiques et événements de la MIA-Cameroun.">
+    <title>Programmes | MIA-Cameroun</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo.jpeg" alt="Logo MIA-Cameroun">
+                <div class="brand-text">
+                    <span class="name">MIA-Cameroun</span>
+                    <span class="sub">Maison de l'IA</span>
+                </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="programmes.html" class="active">Programmes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="tri-stripe tri-fixed">
+        <div class="g"></div>
+        <div class="r"></div>
+        <div class="y"></div>
+    </div>
+
+    <!-- Banner -->
+    <section class="page-banner">
+        <h1>Nos Programmes</h1>
+        <p>Formations, ateliers et événements pour maîtriser l'Intelligence Artificielle</p>
+    </section>
+    <div class="tri-stripe">
+        <div class="g"></div>
+        <div class="r"></div>
+        <div class="y"></div>
+    </div>
+
+    <!-- Formations -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Formations en IA</h2>
+                <div class="bar"></div>
+                <p>Des parcours structurés pour tous les niveaux, du débutant au professionnel</p>
+            </div>
+            <div class="grid-3">
+                <div class="prog-card">
+                    <div class="head"><span class="tag">Débutant</span>
+                        <h3>Introduction à l'IA</h3>
+                    </div>
+                    <div class="body">
+                        <p>Découvrez les fondamentaux de l'Intelligence Artificielle et du Machine Learning.</p>
+                        <ul>
+                            <li>Concepts de base de l'IA</li>
+                            <li>Introduction au Machine Learning</li>
+                            <li>Python pour la Data Science</li>
+                            <li>Projets pratiques guidés</li>
+                        </ul>
+                        <p class="meta"><strong>Durée :</strong> 8 semaines &nbsp;|&nbsp; <strong>Format :</strong>
+                            Hybride</p>
+                    </div>
+                </div>
+                <div class="prog-card">
+                    <div class="head"><span class="tag">Intermédiaire</span>
+                        <h3>Deep Learning & Réseaux de Neurones</h3>
+                    </div>
+                    <div class="body">
+                        <p>Maîtrisez les architectures de Deep Learning et leurs applications concrètes.</p>
+                        <ul>
+                            <li>Réseaux de neurones (CNN, RNN)</li>
+                            <li>TensorFlow & PyTorch</li>
+                            <li>Vision par ordinateur</li>
+                            <li>Traitement du langage naturel (NLP)</li>
+                        </ul>
+                        <p class="meta"><strong>Durée :</strong> 12 semaines &nbsp;|&nbsp; <strong>Format :</strong>
+                            Présentiel</p>
+                    </div>
+                </div>
+                <div class="prog-card">
+                    <div class="head"><span class="tag">Avancé</span>
+                        <h3>IA Appliquée & Déploiement</h3>
+                    </div>
+                    <div class="body">
+                        <p>Apprenez à déployer des modèles IA en production et créer des applications intelligentes.</p>
+                        <ul>
+                            <li>MLOps et pipelines de données</li>
+                            <li>Déploiement cloud (AWS, GCP)</li>
+                            <li>IA générative & LLM</li>
+                            <li>Projet capstone réel</li>
+                        </ul>
+                        <p class="meta"><strong>Durée :</strong> 16 semaines &nbsp;|&nbsp; <strong>Format :</strong>
+                            Hybride</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ateliers -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <h2>Ateliers Pratiques</h2>
+                <div class="bar"></div>
+                <p>Sessions intensives pour approfondir des compétences spécifiques</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Atelier Data Science</h3>
+                    <p>Collecter, nettoyer et analyser des données avec Python, Pandas et les outils de visualisation
+                        modernes.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤖</div>
+                    <h3>Atelier Chatbots IA</h3>
+                    <p>Créez votre propre chatbot intelligent en utilisant des modèles de langage et des APIs modernes.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>Atelier Computer Vision</h3>
+                    <p>Détection d'objets, reconnaissance faciale et analyse d'images avec OpenCV et YOLO.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Événements -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Événements</h2>
+                <div class="bar"></div>
+                <p>Conférences, hackathons et meetups pour la communauté IA camerounaise</p>
+            </div>
+            <div class="grid-3">
+                <div class="event-card" style="border-left-color:var(--secondary);">
+                    <div class="ev-icon">🏆</div>
+                    <h3>Hackathon IA Cameroun 2026</h3>
+                    <p>48 heures pour développer des solutions IA innovantes répondant aux défis du Cameroun.</p>
+                    <span class="date" style="color:var(--secondary);">📅 Mars 2026 — Yaoundé</span>
+                </div>
+                <div class="event-card" style="border-left-color:var(--accent);">
+                    <div class="ev-icon">🎤</div>
+                    <h3>Conférence Africa AI Summit</h3>
+                    <p>Experts internationaux partagent leur vision de l'IA en Afrique. Networking et opportunités.</p>
+                    <span class="date" style="color:var(--accent);">📅 Juin 2026 — Douala</span>
+                </div>
+                <div class="event-card" style="border-left-color:var(--cam-green);">
+                    <div class="ev-icon">💻</div>
+                    <h3>Meetups Mensuels</h3>
+                    <p>Chaque mois, retrouvez la communauté MIA pour des présentations et échanges autour de l'IA.</p>
+                    <span class="date" style="color:var(--cam-green);">📅 Chaque 1er samedi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-dark" style="text-align:center;">
+        <div class="container">
+            <h2 style="margin-bottom:12px;">Prêt à commencer votre parcours en IA ?</h2>
+            <p style="color:rgba(255,255,255,.7);max-width:550px;margin:0 auto 28px;">Inscrivez-vous à l'un de nos
+                programmes ou contactez-nous pour plus d'informations.</p>
+            <a href="contact.html" class="btn btn-gold">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.jpeg" alt="MIA-Cameroun">
+                    <p>La Maison de l'Intelligence Artificielle du Cameroun — promouvoir l'innovation et former les
+                        talents de demain.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="programmes.html">Programmes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Programmes</h4>
+                    <ul>
+                        <li><a href="programmes.html">Formation IA</a></li>
+                        <li><a href="programmes.html">Ateliers pratiques</a></li>
+                        <li><a href="programmes.html">Événements</a></li>
+                        <li><a href="programmes.html">Hackathons</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Newsletter</h4>
+                    <p style="font-size:.85rem;margin-bottom:10px;">Recevez nos dernières actualités</p>
+                    <div class="footer-nl">
+                        <input type="email" placeholder="Votre adresse email">
+                        <button class="btn btn-gold"
+                            style="width:100%;padding:11px;font-size:.85rem;">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-mini-tri"><span></span><span></span><span></span></div>
+                <p>&copy; 2026 MIA-Cameroun — Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
