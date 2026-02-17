@@ -1,0 +1,655 @@
+// ============================================
+// MIA-Cameroun — Custom Bootstrap 5.3.8 SCSS
+// ============================================
+
+// 1. Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+// 2. Override Bootstrap Variables BEFORE import
+// -----------------------------------------------
+// Colors
+$primary: #0b1d35;
+$secondary: #d4a017;
+$info: #00b4d8;
+$success: #007a33;
+$danger: #ce1126;
+$warning: #fcd116;
+$light: #f7f8fc;
+$dark: #0d0d1a;
+
+// Font families
+$font-family-sans-serif: 'Inter', sans-serif;
+$headings-font-family: 'Outfit', sans-serif;
+$headings-font-weight: 700;
+
+// Border radius
+$border-radius: 14px;
+$border-radius-sm: 10px;
+$border-radius-lg: 20px;
+$border-radius-pill: 50rem;
+
+// Navbar
+$navbar-dark-color: rgba(255, 255, 255, .7);
+$navbar-dark-active-color: #fff;
+$navbar-dark-hover-color: #fff;
+
+// Cards
+$card-border-width: 0;
+$card-border-radius: 14px;
+
+// 3. Import full Bootstrap SCSS source
+// -----------------------------------------------
+@import '../bootstrap-5.3.8/bootstrap-5.3.8/scss/bootstrap';
+
+// ============================================
+// 4. MIA-Cameroun CUSTOM STYLES
+// ============================================
+
+// --- Custom variables ---
+$primary-light: #132d52;
+$primary-mid: #1a3f6f;
+$secondary-light: #f0c040;
+$accent: #00b4d8;
+$accent-light: #48cae4;
+$cam-green: #007a33;
+$cam-red: #ce1126;
+$cam-yellow: #fcd116;
+$gray-custom: #8896a7;
+$gray-dark-custom: #3d4f63;
+$gray-light-custom: #e4e8ef;
+$ease: cubic-bezier(.4, 0, .2, 1);
+
+// --- Global ---
+body {
+    line-height: 1.75;
+    overflow-x: hidden;
+    color: $gray-dark-custom;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $primary;
+}
+
+a {
+    transition: .3s $ease;
+}
+
+// --- Tricolore stripe ---
+.tri-stripe {
+    height: 3px;
+    display: flex;
+
+    .g {
+        flex: 1;
+        background: $cam-green;
+    }
+
+    .r {
+        flex: 1;
+        background: $cam-red;
+    }
+
+    .y {
+        flex: 1;
+        background: $cam-yellow;
+    }
+}
+
+.tri-fixed {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.tri-mini {
+    width: 50px;
+    height: 2px;
+    display: flex;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 0 auto 10px;
+
+    span:nth-child(1) {
+        flex: 1;
+        background: $cam-green;
+    }
+
+    span:nth-child(2) {
+        flex: 1;
+        background: $cam-red;
+    }
+
+    span:nth-child(3) {
+        flex: 1;
+        background: $cam-yellow;
+    }
+}
+
+// --- Custom Navbar ---
+.navbar-mia {
+    background: rgba($primary, .92);
+    backdrop-filter: blur(16px) saturate(1.8);
+    border-bottom: 1px solid rgba(#fff, .06);
+
+    .navbar-brand {
+        .brand-name {
+            font-family: $headings-font-family;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: #fff;
+            letter-spacing: .5px;
+        }
+
+        .brand-sub {
+            color: $secondary;
+            font-size: .65rem;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+        }
+    }
+
+    .nav-link {
+        border-radius: $border-radius-pill;
+        padding-left: 1.1rem !important;
+        padding-right: 1.1rem !important;
+        font-weight: 500;
+        font-size: .9rem;
+
+        &:hover {
+            background: rgba(#fff, .08);
+        }
+
+        &.active {
+            background: rgba(#fff, .12);
+        }
+    }
+}
+
+.navbar-brand-logo {
+    height: 44px;
+    border-radius: 8px;
+    background: #fff;
+    padding: 3px;
+}
+
+// --- Section bar decoration ---
+.section-bar {
+    width: 50px;
+    height: 3px;
+    margin: 10px auto 16px;
+    background: linear-gradient(90deg, $secondary, $accent);
+    border-radius: 4px;
+}
+
+// --- Hero section ---
+.hero-mia {
+    min-height: 100vh;
+    background: linear-gradient(160deg, $primary 0%, $primary-light 40%, $primary-mid 100%);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(ellipse 600px 500px at 15% 60%, rgba($accent, .18), transparent),
+            radial-gradient(ellipse 500px 400px at 85% 25%, rgba($secondary, .12), transparent),
+            radial-gradient(ellipse 300px 300px at 50% 90%, rgba($accent, .08), transparent);
+        pointer-events: none;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(rgba(#fff, .04) 1px, transparent 1px);
+        background-size: 32px 32px;
+        pointer-events: none;
+    }
+}
+
+.hero-logo-mia {
+    width: 130px;
+    height: 130px;
+    border-radius: 24px;
+    object-fit: contain;
+    background: #fff;
+    padding: 14px;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, .35);
+    animation: logoFloat 4s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(1deg);
+    }
+}
+
+.text-gold {
+    color: $secondary !important;
+}
+
+.text-accent {
+    color: $accent-light !important;
+}
+
+// --- Particles ---
+.particles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    span {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: rgba($secondary, .3);
+        border-radius: 50%;
+        animation: particleDrift linear infinite;
+    }
+
+    span:nth-child(1) {
+        left: 10%;
+        top: 20%;
+        animation-duration: 8s;
+    }
+
+    span:nth-child(2) {
+        left: 25%;
+        top: 70%;
+        animation-duration: 12s;
+        width: 6px;
+        height: 6px;
+        background: rgba($accent, .2);
+    }
+
+    span:nth-child(3) {
+        left: 60%;
+        top: 15%;
+        animation-duration: 10s;
+    }
+
+    span:nth-child(4) {
+        left: 80%;
+        top: 60%;
+        animation-duration: 9s;
+        width: 5px;
+        height: 5px;
+        background: rgba($accent, .25);
+    }
+
+    span:nth-child(5) {
+        left: 45%;
+        top: 85%;
+        animation-duration: 11s;
+        background: rgba($secondary, .2);
+    }
+
+    span:nth-child(6) {
+        left: 90%;
+        top: 35%;
+        animation-duration: 7s;
+        width: 3px;
+        height: 3px;
+    }
+}
+
+@keyframes particleDrift {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh) translateX(30px);
+        opacity: 0;
+    }
+}
+
+// --- Card hover effect ---
+.card-mia {
+    transition: .4s $ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .04);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, $secondary, $accent);
+        opacity: 0;
+        transition: .4s $ease;
+    }
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 50px rgba($primary, .16) !important;
+
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+.card-icon-mia {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    background: linear-gradient(135deg, rgba($accent, .08), rgba($secondary, .08));
+}
+
+// --- Stats section ---
+.section-dark-mia {
+    background: linear-gradient(160deg, $primary, $primary-light);
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    color: $secondary;
+    font-weight: 800;
+    font-family: $headings-font-family;
+}
+
+// --- Page Banner ---
+.page-banner-mia {
+    background: linear-gradient(160deg, $primary, $primary-light, $primary-mid);
+    padding: 130px 0 70px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 50% 50%, rgba($accent, .1), transparent 60%);
+        pointer-events: none;
+    }
+}
+
+// --- Programme cards ---
+.prog-card-mia {
+    border: none;
+    border-radius: $border-radius;
+    overflow: hidden;
+    transition: .4s $ease;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 50px rgba($primary, .16) !important;
+    }
+}
+
+.prog-header-mia {
+    background: linear-gradient(135deg, $primary, $primary-mid);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: -30px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: rgba($secondary, .12);
+    }
+}
+
+.prog-tag {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    background: rgba($secondary, .25);
+    color: $secondary-light;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.prog-list li {
+    padding: 5px 0 5px 24px;
+    position: relative;
+    color: $gray-dark-custom;
+    font-size: .92rem;
+
+    &::before {
+        content: '▸';
+        position: absolute;
+        left: 0;
+        color: $secondary;
+        font-weight: 700;
+    }
+}
+
+// --- Event cards ---
+.event-card-mia {
+    border-left: 4px solid;
+    border-radius: $border-radius;
+    transition: .4s $ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 16px 50px rgba($primary, .16) !important;
+    }
+}
+
+// --- Value cards ---
+.value-card-mia {
+    border-top: 3px solid $secondary !important;
+    transition: .4s $ease;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 50px rgba($primary, .16) !important;
+    }
+}
+
+// --- Quote box ---
+.quote-box-mia {
+    background: linear-gradient(135deg, $primary, $primary-light);
+    border-radius: $border-radius;
+    position: relative;
+
+    &::before {
+        content: '"';
+        position: absolute;
+        top: -10px;
+        left: 24px;
+        font-size: 6rem;
+        color: rgba($secondary, .15);
+        font-family: serif;
+        line-height: 1;
+    }
+}
+
+// --- Check list ---
+.check-list-mia li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+    color: $gray-dark-custom;
+
+    &::before {
+        content: '✦';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        color: $secondary;
+        font-size: .75rem;
+    }
+}
+
+// --- Contact panel ---
+.contact-panel-mia {
+    background: linear-gradient(160deg, $primary, $primary-mid);
+    border-radius: $border-radius;
+}
+
+.c-icon-mia {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    background: rgba(#fff, .08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.social-btn-mia {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(#fff, .08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: .3s $ease;
+    text-decoration: none;
+
+    &:hover {
+        background: $secondary;
+        color: $primary;
+    }
+}
+
+// --- Form focus ---
+.form-control:focus {
+    border-color: $accent;
+    box-shadow: 0 0 0 4px rgba($accent, .08);
+}
+
+// --- Button shine ---
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, transparent 40%, rgba(#fff, .25) 50%, transparent 60%);
+        transform: translateX(-100%);
+        transition: .6s;
+    }
+
+    &:hover::after {
+        transform: translateX(100%);
+    }
+}
+
+// --- Custom button styles ---
+.btn-gold {
+    background: linear-gradient(135deg, $secondary, $secondary-light);
+    color: $primary;
+    border: none;
+    box-shadow: 0 4px 20px rgba($secondary, .35);
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba($secondary, .5);
+        color: $primary;
+    }
+}
+
+.btn-cyan {
+    background: linear-gradient(135deg, $accent, $accent-light);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 20px rgba($accent, .3);
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba($accent, .45);
+        color: #fff;
+    }
+}
+
+// --- Footer ---
+.footer-mia {
+    background: $dark;
+    color: rgba(#fff, .6);
+
+    h5,
+    h6 {
+        color: #fff;
+        border-bottom: 2px solid $secondary;
+        display: inline-block;
+        padding-bottom: 6px;
+    }
+
+    a {
+        color: rgba(#fff, .5);
+        text-decoration: none;
+        transition: .3s $ease;
+
+        &:hover {
+            color: $secondary;
+            padding-left: 4px;
+        }
+    }
+
+    .footer-nl input {
+        background: rgba(#fff, .04);
+        border-color: rgba(#fff, .1);
+        color: #fff;
+
+        &::placeholder {
+            color: rgba(#fff, .3);
+        }
+    }
+}
+
+// --- Alert success custom ---
+.alert-success-mia {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb);
+    color: #155724;
+    font-weight: 600;
+    display: none;
+}
+
+// --- Responsive fixes ---
+@media (max-width: 768px) {
+    .hero-mia {
+        padding-top: 90px !important;
+        padding-bottom: 50px !important;
+    }
+
+    .page-banner-mia {
+        padding: 110px 0 50px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}

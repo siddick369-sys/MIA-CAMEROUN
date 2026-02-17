@@ -15,26 +15,30 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-mia">
         <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <img src="logo.jpeg" alt="Logo MIA-Cameroun">
-                <div class="brand-text">
-                    <span class="name">MIA-Cameroun</span>
-                    <span class="sub">Maison de l'IA</span>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="logo.jpeg" alt="Logo MIA-Cameroun" class="navbar-brand-logo">
+                <div>
+                    <span class="brand-name d-block">MIA-Cameroun</span>
+                    <span class="brand-sub d-block">Maison de l'IA</span>
                 </div>
             </a>
-            <div class="nav-links" id="navLinks">
-                <a href="index.html">Accueil</a>
-                <a href="a-propos.html">À propos</a>
-                <a href="programmes.html">Programmes</a>
-                <a href="contact.html" class="active">Contact</a>
-            </div>
-            <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('active')">
-                <span></span><span></span><span></span>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="a-propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="programmes.html">Programmes</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Tricolore fixe -->
     <div class="tri-stripe tri-fixed">
         <div class="g"></div>
         <div class="r"></div>
@@ -42,10 +46,13 @@
     </div>
 
     <!-- Banner -->
-    <section class="page-banner">
-        <h1>Contactez-nous</h1>
-        <p>Nous sommes à votre écoute pour toute question ou demande d'information</p>
+    <section class="page-banner-mia text-center text-white">
+        <h1 class="position-relative fw-bold" style="z-index:2;">Contactez-nous</h1>
+        <p class="position-relative" style="z-index:2;color:rgba(255,255,255,.6);font-size:1.1rem;">Nous sommes à votre
+            écoute pour toute question ou demande d'information</p>
     </section>
+
+    <!-- Tricolore -->
     <div class="tri-stripe">
         <div class="g"></div>
         <div class="r"></div>
@@ -53,76 +60,94 @@
     </div>
 
     <!-- Contact -->
-    <section class="section">
-        <div class="container">
-            <div class="contact-grid">
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row g-4">
 
                 <!-- Panel Info -->
-                <div class="contact-panel">
-                    <h3>Nos Coordonnées</h3>
-                    <div class="c-item">
-                        <div class="ico">📍</div>
-                        <div>
-                            <h4>Adresse</h4>
-                            <p>Quartier Bastos, Yaoundé<br>Cameroun</p>
+                <div class="col-lg-5">
+                    <div class="contact-panel-mia text-white p-4 p-lg-5 h-100">
+                        <h5 class="fw-bold text-white mb-4">Nos Coordonnées</h5>
+
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="c-icon-mia">📍</div>
+                            <div>
+                                <h6 class="fw-bold text-white mb-1 small">Adresse</h6>
+                                <p class="small mb-0" style="color:rgba(255,255,255,.6);">Quartier Bastos,
+                                    Yaoundé<br>Cameroun</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-item">
-                        <div class="ico">📧</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>contact@mia-cameroun.cm</p>
+
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="c-icon-mia">📧</div>
+                            <div>
+                                <h6 class="fw-bold text-white mb-1 small">Email</h6>
+                                <p class="small mb-0" style="color:rgba(255,255,255,.6);">contact@mia-cameroun.cm</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-item">
-                        <div class="ico">📞</div>
-                        <div>
-                            <h4>Téléphone</h4>
-                            <p>+237 6XX XXX XXX</p>
+
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="c-icon-mia">📞</div>
+                            <div>
+                                <h6 class="fw-bold text-white mb-1 small">Téléphone</h6>
+                                <p class="small mb-0" style="color:rgba(255,255,255,.6);">+237 6XX XXX XXX</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-item">
-                        <div class="ico">🕐</div>
-                        <div>
-                            <h4>Horaires</h4>
-                            <p>Lun - Ven : 8h00 - 17h00<br>Sam : 9h00 - 13h00</p>
+
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="c-icon-mia">🕐</div>
+                            <div>
+                                <h6 class="fw-bold text-white mb-1 small">Horaires</h6>
+                                <p class="small mb-0" style="color:rgba(255,255,255,.6);">Lun - Ven : 8h00 -
+                                    17h00<br>Sam : 9h00 - 13h00</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="socials">
-                        <a href="#">f</a>
-                        <a href="#">𝕏</a>
-                        <a href="#">in</a>
-                        <a href="#">▶</a>
+
+                        <hr style="border-color:rgba(255,255,255,.1);">
+                        <div class="d-flex gap-2 mt-3">
+                            <a href="#" class="social-btn-mia">f</a>
+                            <a href="#" class="social-btn-mia">𝕏</a>
+                            <a href="#" class="social-btn-mia">in</a>
+                            <a href="#" class="social-btn-mia">▶</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Formulaire EmailJS -->
-                <div class="contact-form">
-                    <h3>Envoyez-nous un message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="from_name">Nom complet *</label>
-                            <input type="text" id="from_name" name="from_name" placeholder="Entrez votre nom" required>
+                <!-- Formulaire -->
+                <div class="col-lg-7">
+                    <div class="card shadow p-4 p-lg-5 h-100" style="border-radius:14px;">
+                        <h5 class="fw-bold mb-4">Envoyez-nous un message</h5>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="from_name" class="form-label fw-semibold small">Nom complet *</label>
+                                <input type="text" class="form-control" id="from_name" name="from_name"
+                                    placeholder="Entrez votre nom" required
+                                    style="border-radius:10px;padding:13px 18px;background:#f7f8fc;">
+                            </div>
+                            <div class="mb-3">
+                                <label for="reply_to" class="form-label fw-semibold small">Adresse email *</label>
+                                <input type="email" class="form-control" id="reply_to" name="reply_to"
+                                    placeholder="Entrez votre email" required
+                                    style="border-radius:10px;padding:13px 18px;background:#f7f8fc;">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-semibold small">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5"
+                                    placeholder="Écrivez votre message ici..." required
+                                    style="border-radius:10px;padding:13px 18px;background:#f7f8fc;resize:vertical;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gold w-100 fw-semibold rounded-pill btn-shine py-3"
+                                id="submitBtn">
+                                Envoyer le message
+                            </button>
+                        </form>
+                        <div id="successMsg" class="alert alert-success-mia text-center mt-3 p-3 rounded-3">
+                            ✅ Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.
                         </div>
-                        <div class="form-group">
-                            <label for="reply_to">Adresse email *</label>
-                            <input type="email" id="reply_to" name="reply_to" placeholder="Entrez votre email" required>
+                        <div id="errorMsg" class="alert alert-danger text-center mt-3 fw-semibold"
+                            style="display:none;border-radius:10px;">
+                            ❌ Erreur lors de l'envoi. Veuillez réessayer ou nous contacter directement par email.
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" placeholder="Écrivez votre message ici..."
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-gold" id="submitBtn" style="width:100%;">
-                            Envoyer le message
-                        </button>
-                    </form>
-                    <div id="successMsg" class="alert-success">
-                        ✅ Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.
-                    </div>
-                    <div id="errorMsg"
-                        style="display:none;margin-top:18px;padding:16px 20px;border-radius:10px;background:#f8d7da;color:#721c24;text-align:center;font-weight:600;">
-                        ❌ Erreur lors de l'envoi. Veuillez réessayer ou nous contacter directement par email.
                     </div>
                 </div>
 
@@ -131,66 +156,61 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer-mia pt-5 pb-3">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="logo.jpeg" alt="MIA-Cameroun">
-                    <p>La Maison de l'Intelligence Artificielle du Cameroun — promouvoir l'innovation et former les
-                        talents de demain.</p>
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <img src="logo.jpeg" alt="MIA-Cameroun" class="navbar-brand-logo mb-3">
+                    <p class="small">La Maison de l'Intelligence Artificielle du Cameroun — promouvoir l'innovation et
+                        former les talents de demain.</p>
                 </div>
-                <div>
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="a-propos.html">À propos</a></li>
-                        <li><a href="programmes.html">Programmes</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                <div class="col-6 col-lg-2">
+                    <h6 class="mb-3 fw-bold">Navigation</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html">Accueil</a></li>
+                        <li class="mb-2"><a href="a-propos.html">À propos</a></li>
+                        <li class="mb-2"><a href="programmes.html">Programmes</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Programmes</h4>
-                    <ul>
-                        <li><a href="programmes.html">Formation IA</a></li>
-                        <li><a href="programmes.html">Ateliers pratiques</a></li>
-                        <li><a href="programmes.html">Événements</a></li>
-                        <li><a href="programmes.html">Hackathons</a></li>
+                <div class="col-6 col-lg-2">
+                    <h6 class="mb-3 fw-bold">Programmes</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="programmes.html">Formation IA</a></li>
+                        <li class="mb-2"><a href="programmes.html">Ateliers pratiques</a></li>
+                        <li class="mb-2"><a href="programmes.html">Événements</a></li>
+                        <li class="mb-2"><a href="programmes.html">Hackathons</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Newsletter</h4>
-                    <p style="font-size:.85rem;margin-bottom:10px;">Recevez nos dernières actualités</p>
-                    <div class="footer-nl">
-                        <input type="email" placeholder="Votre adresse email">
-                        <button class="btn btn-gold"
-                            style="width:100%;padding:11px;font-size:.85rem;">S'abonner</button>
+                <div class="col-lg-4">
+                    <h6 class="mb-3 fw-bold">Newsletter</h6>
+                    <p class="small">Recevez nos dernières actualités</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control footer-nl rounded-start-pill"
+                            placeholder="Votre adresse email">
+                        <button class="btn btn-gold fw-semibold rounded-end-pill btn-shine">S'abonner</button>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="footer-mini-tri"><span></span><span></span><span></span></div>
-                <p>&copy; 2026 MIA-Cameroun — Tous droits réservés.</p>
+            <hr style="border-color:rgba(255,255,255,.08);">
+            <div class="text-center">
+                <div class="tri-mini"><span></span><span></span><span></span></div>
+                <p class="small mb-0">&copy; 2026 MIA-Cameroun — Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
+    <script src="bootstrap-5.3.8/bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // ============================================
         // CONFIGURATION EMAILJS
         // ============================================
-        // 1. Créez un compte sur https://www.emailjs.com
-        // 2. Créez un service email (Gmail, Outlook, etc.)
-        // 3. Créez un template avec les variables : {{from_name}}, {{reply_to}}, {{message}}
-        // 4. Remplacez les valeurs ci-dessous par vos identifiants :
+        const EMAILJS_PUBLIC_KEY = 'VOTRE_PUBLIC_KEY';
+        const EMAILJS_SERVICE_ID = 'VOTRE_SERVICE_ID';
+        const EMAILJS_TEMPLATE_ID = 'VOTRE_TEMPLATE_ID';
 
-        const EMAILJS_PUBLIC_KEY = 'VOTRE_PUBLIC_KEY';    // Clé publique EmailJS
-        const EMAILJS_SERVICE_ID = 'VOTRE_SERVICE_ID';    // ID du service email
-        const EMAILJS_TEMPLATE_ID = 'VOTRE_TEMPLATE_ID';  // ID du template
-
-        // Initialisation EmailJS
         emailjs.init(EMAILJS_PUBLIC_KEY);
 
-        // Gestion du formulaire
         document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
 
@@ -200,7 +220,6 @@
             btn.disabled = true;
             btn.style.opacity = '0.7';
 
-            // Paramètres du template
             const templateParams = {
                 from_name: document.getElementById('from_name').value,
                 reply_to: document.getElementById('reply_to').value,
@@ -209,13 +228,11 @@
 
             emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
                 .then(function () {
-                    // Succès
                     document.getElementById('contactForm').style.display = 'none';
                     document.getElementById('successMsg').style.display = 'block';
                     document.getElementById('errorMsg').style.display = 'none';
                 })
                 .catch(function (error) {
-                    // Erreur
                     console.error('EmailJS Error:', error);
                     document.getElementById('errorMsg').style.display = 'block';
                     btn.textContent = originalText;
@@ -224,7 +241,6 @@
                 });
         });
     </script>
-
 </body>
 
 </html>

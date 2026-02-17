@@ -13,26 +13,30 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-mia">
         <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <img src="logo.jpeg" alt="Logo MIA-Cameroun">
-                <div class="brand-text">
-                    <span class="name">MIA-Cameroun</span>
-                    <span class="sub">Maison de l'IA</span>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="logo.jpeg" alt="Logo MIA-Cameroun" class="navbar-brand-logo">
+                <div>
+                    <span class="brand-name d-block">MIA-Cameroun</span>
+                    <span class="brand-sub d-block">Maison de l'IA</span>
                 </div>
             </a>
-            <div class="nav-links" id="navLinks">
-                <a href="index.html">Accueil</a>
-                <a href="a-propos.html" class="active">À propos</a>
-                <a href="programmes.html">Programmes</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('active')">
-                <span></span><span></span><span></span>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" href="a-propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="programmes.html">Programmes</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill" href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Tricolore fixe -->
     <div class="tri-stripe tri-fixed">
         <div class="g"></div>
         <div class="r"></div>
@@ -40,10 +44,13 @@
     </div>
 
     <!-- Banner -->
-    <section class="page-banner">
-        <h1>À propos de MIA-Cameroun</h1>
-        <p>Notre mission, notre vision et nos valeurs au service de l'IA au Cameroun</p>
+    <section class="page-banner-mia text-center text-white">
+        <h1 class="position-relative fw-bold" style="z-index:2;">À propos de MIA-Cameroun</h1>
+        <p class="position-relative" style="z-index:2;color:rgba(255,255,255,.6);font-size:1.1rem;">Notre mission, notre
+            vision et nos valeurs au service de l'IA au Cameroun</p>
     </section>
+
+    <!-- Tricolore -->
     <div class="tri-stripe">
         <div class="g"></div>
         <div class="r"></div>
@@ -51,140 +58,165 @@
     </div>
 
     <!-- Mission -->
-    <section class="section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="text">
-                    <h2>Notre Mission</h2>
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="fw-bold mb-3">Notre Mission</h2>
                     <p>La <strong>Maison de l'Intelligence Artificielle du Cameroun (MIA-Cameroun)</strong> est une
                         institution pionnière dédiée à la promotion, la recherche et la vulgarisation de l'Intelligence
                         Artificielle sur l'ensemble du territoire camerounais.</p>
                     <p>Fondée avec la conviction que l'IA est un levier stratégique pour le développement de l'Afrique,
                         la MIA-Cameroun œuvre à :</p>
-                    <ul class="check-list">
+                    <ul class="list-unstyled check-list-mia">
                         <li>Former les talents de demain aux technologies de l'IA</li>
                         <li>Soutenir la recherche et l'innovation locale</li>
                         <li>Sensibiliser le grand public aux enjeux de l'IA</li>
                         <li>Accompagner les entreprises dans leur transformation numérique</li>
                     </ul>
                 </div>
-                <div class="logo-box">
-                    <img src="logo.jpeg" alt="MIA-Cameroun">
+                <div class="col-lg-5">
+                    <div class="bg-white rounded-4 p-5 shadow text-center">
+                        <img src="logo.jpeg" alt="MIA-Cameroun" class="img-fluid" style="max-width:280px;">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Vision -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-head">
-                <h2>Notre Vision</h2>
-                <div class="bar"></div>
-                <p>Faire du Cameroun un hub d'innovation en Intelligence Artificielle en Afrique Centrale</p>
+    <section class="py-5" style="background:var(--bs-light);">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Notre Vision</h2>
+                <div class="section-bar"></div>
+                <p class="text-muted mx-auto" style="max-width:560px;">Faire du Cameroun un hub d'innovation en
+                    Intelligence Artificielle en Afrique Centrale</p>
             </div>
-            <div style="max-width:760px;margin:0 auto;text-align:center;">
-                <p style="font-size:1.1rem;color:var(--gray-dark);line-height:1.9;margin-bottom:28px;">
+            <div class="mx-auto text-center" style="max-width:760px;">
+                <p style="font-size:1.1rem;color:#3d4f63;line-height:1.9;" class="mb-4">
                     Nous envisageons un Cameroun où l'Intelligence Artificielle est accessible à tous, où chaque citoyen
                     peut comprendre, utiliser et innover grâce aux technologies intelligentes. Notre vision est celle
                     d'un écosystème vibrant où la recherche, l'industrie et l'éducation collaborent.
                 </p>
-                <div class="quote-box">
-                    <p>« L'Intelligence Artificielle n'est pas seulement une technologie, c'est un outil de
-                        transformation sociale et économique pour l'Afrique. »</p>
-                    <span class="author">— MIA-Cameroun</span>
+                <div class="quote-box-mia text-white text-center p-4 p-md-5">
+                    <p class="fst-italic mb-2" style="font-size:1.15rem;color:rgba(255,255,255,.9);">
+                        « L'Intelligence Artificielle n'est pas seulement une technologie, c'est un outil de
+                        transformation sociale et économique pour l'Afrique. »
+                    </p>
+                    <span class="fw-semibold text-gold">— MIA-Cameroun</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Valeurs -->
-    <section class="section">
-        <div class="container">
-            <div class="section-head">
-                <h2>Nos Valeurs</h2>
-                <div class="bar"></div>
-                <p>Les piliers qui guident nos actions au quotidien</p>
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nos Valeurs</h2>
+                <div class="section-bar"></div>
+                <p class="text-muted mx-auto" style="max-width:560px;">Les piliers qui guident nos actions au quotidien
+                </p>
             </div>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="ico">💡</div>
-                    <h3>Innovation</h3>
-                    <p>Encourager la créativité et l'innovation technologique pour résoudre les problèmes locaux.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card value-card-mia h-100 shadow-sm text-center p-4">
+                        <div class="fs-1 mb-3">💡</div>
+                        <h5 class="fw-bold">Innovation</h5>
+                        <p class="text-muted mb-0">Encourager la créativité et l'innovation technologique pour résoudre
+                            les problèmes locaux.</p>
+                    </div>
                 </div>
-                <div class="value-card">
-                    <div class="ico">🌍</div>
-                    <h3>Accessibilité</h3>
-                    <p>Rendre l'IA accessible à tous, indépendamment du niveau social ou géographique.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card value-card-mia h-100 shadow-sm text-center p-4">
+                        <div class="fs-1 mb-3">🌍</div>
+                        <h5 class="fw-bold">Accessibilité</h5>
+                        <p class="text-muted mb-0">Rendre l'IA accessible à tous, indépendamment du niveau social ou
+                            géographique.</p>
+                    </div>
                 </div>
-                <div class="value-card">
-                    <div class="ico">🤝</div>
-                    <h3>Collaboration</h3>
-                    <p>Favoriser les partenariats entre le monde académique, l'industrie et les institutions.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card value-card-mia h-100 shadow-sm text-center p-4">
+                        <div class="fs-1 mb-3">🤝</div>
+                        <h5 class="fw-bold">Collaboration</h5>
+                        <p class="text-muted mb-0">Favoriser les partenariats entre le monde académique, l'industrie et
+                            les institutions.</p>
+                    </div>
                 </div>
-                <div class="value-card">
-                    <div class="ico">⚖️</div>
-                    <h3>Éthique</h3>
-                    <p>Promouvoir une utilisation responsable et éthique de l'IA, respectueuse des droits humains.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card value-card-mia h-100 shadow-sm text-center p-4">
+                        <div class="fs-1 mb-3">⚖️</div>
+                        <h5 class="fw-bold">Éthique</h5>
+                        <p class="text-muted mb-0">Promouvoir une utilisation responsable et éthique de l'IA,
+                            respectueuse des droits humains.</p>
+                    </div>
                 </div>
-                <div class="value-card">
-                    <div class="ico">🎯</div>
-                    <h3>Excellence</h3>
-                    <p>Viser l'excellence dans tout, de la formation à la recherche.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card value-card-mia h-100 shadow-sm text-center p-4">
+                        <div class="fs-1 mb-3">🎯</div>
+                        <h5 class="fw-bold">Excellence</h5>
+                        <p class="text-muted mb-0">Viser l'excellence dans tout, de la formation à la recherche.</p>
+                    </div>
                 </div>
-                <div class="value-card">
-                    <div class="ico">🌱</div>
-                    <h3>Impact Local</h3>
-                    <p>Développer des solutions IA adaptées aux besoins spécifiques du Cameroun.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card value-card-mia h-100 shadow-sm text-center p-4">
+                        <div class="fs-1 mb-3">🌱</div>
+                        <h5 class="fw-bold">Impact Local</h5>
+                        <p class="text-muted mb-0">Développer des solutions IA adaptées aux besoins spécifiques du
+                            Cameroun.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer-mia pt-5 pb-3">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="logo.jpeg" alt="MIA-Cameroun">
-                    <p>La Maison de l'Intelligence Artificielle du Cameroun — promouvoir l'innovation et former les
-                        talents de demain.</p>
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <img src="logo.jpeg" alt="MIA-Cameroun" class="navbar-brand-logo mb-3">
+                    <p class="small">La Maison de l'Intelligence Artificielle du Cameroun — promouvoir l'innovation et
+                        former les talents de demain.</p>
                 </div>
-                <div>
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="a-propos.html">À propos</a></li>
-                        <li><a href="programmes.html">Programmes</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                <div class="col-6 col-lg-2">
+                    <h6 class="mb-3 fw-bold">Navigation</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html">Accueil</a></li>
+                        <li class="mb-2"><a href="a-propos.html">À propos</a></li>
+                        <li class="mb-2"><a href="programmes.html">Programmes</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Programmes</h4>
-                    <ul>
-                        <li><a href="programmes.html">Formation IA</a></li>
-                        <li><a href="programmes.html">Ateliers pratiques</a></li>
-                        <li><a href="programmes.html">Événements</a></li>
-                        <li><a href="programmes.html">Hackathons</a></li>
+                <div class="col-6 col-lg-2">
+                    <h6 class="mb-3 fw-bold">Programmes</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="programmes.html">Formation IA</a></li>
+                        <li class="mb-2"><a href="programmes.html">Ateliers pratiques</a></li>
+                        <li class="mb-2"><a href="programmes.html">Événements</a></li>
+                        <li class="mb-2"><a href="programmes.html">Hackathons</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Newsletter</h4>
-                    <p style="font-size:.85rem;margin-bottom:10px;">Recevez nos dernières actualités</p>
-                    <div class="footer-nl">
-                        <input type="email" placeholder="Votre adresse email">
-                        <button class="btn btn-gold"
-                            style="width:100%;padding:11px;font-size:.85rem;">S'abonner</button>
+                <div class="col-lg-4">
+                    <h6 class="mb-3 fw-bold">Newsletter</h6>
+                    <p class="small">Recevez nos dernières actualités</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control footer-nl rounded-start-pill"
+                            placeholder="Votre adresse email">
+                        <button class="btn btn-gold fw-semibold rounded-end-pill btn-shine">S'abonner</button>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="footer-mini-tri"><span></span><span></span><span></span></div>
-                <p>&copy; 2026 MIA-Cameroun — Tous droits réservés.</p>
+            <hr style="border-color:rgba(255,255,255,.08);">
+            <div class="text-center">
+                <div class="tri-mini"><span></span><span></span><span></span></div>
+                <p class="small mb-0">&copy; 2026 MIA-Cameroun — Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
+    <script src="bootstrap-5.3.8/bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
